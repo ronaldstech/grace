@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile web page</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <h1>Welcome to my profile</h1>
+    <%
+        products.forEach((v) => {
+            %>
+            <h3>Title: <%= v.title %></h3>
+            <h3>Description: <%= v.description %></h3>
+            <img src="http://localhost:4000<%= v.image %>" alt=" <%= v.title %>" width="100">
+            <hr>
+            <%
+        })
+    %>
+</body>
+</html>
